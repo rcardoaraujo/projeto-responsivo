@@ -5,18 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Responsivo</title>
+    <!-- Link do CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Link do Ícone -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
         <a href="https://github.com/rcardoaraujo"><img src="foto-github.jpg" alt="Foto Perfil"></a>
-        <menu>
+        <span id="icone" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="itens">
             <ul>
-                <li><a href="#">Esporte</a></li>
-                <li><a href="#">Política</a></li>
-                <li><a href="#">Mundo</a></li>
-                <li><a href="#">Animais</a></li>
-                <li><a href="#">Saúde</a></li>
+                <a href="#">
+                    <li>Esporte</li>
+                </a>
+                <a href="#">
+                    <li>Política</li>
+                </a>
+                <a href="#">
+                    <li>Mundo</li>
+                </a>
+                <a href="#">
+                    <li>Animais</li>
+                </a>
+                <a href="#">
+                    <li>Saúde</li>
+                </a>
             </ul>
         </menu>
     </header>
@@ -36,5 +53,15 @@
             </p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
