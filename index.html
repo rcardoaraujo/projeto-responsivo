@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Responsivo</title>
     <!-- Link do CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/mobile-first.css" media="all">
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="estilos/media-queries.css" media="screen and (min-width:768px)">
 
     <!-- Link do Ícone -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <a href="https://github.com/rcardoaraujo"><img src="foto-github.jpg" alt="Foto Perfil"></a>
         <span id="icone" class="material-symbols-outlined" onclick="clickMenu()">
@@ -60,6 +63,12 @@
             }
             else {
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'flex'
             }
         }
     </script>

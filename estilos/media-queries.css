@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* TABLET & ACIMA */
+
+menu#itens {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+header {
+    padding-bottom: 15px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+span#icone {
+    display: none;
+}
+
+li {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}

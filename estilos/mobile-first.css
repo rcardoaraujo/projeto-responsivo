@@ -17,6 +17,7 @@
 
 body {
     background-color: var(--cor02);
+    padding-bottom: 10px;
 }
 
 /* HEADER */
